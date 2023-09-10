@@ -4,6 +4,7 @@ body {
     max-width: 1500px;
     margin: 0 auto;
     font-family: Sans-serif;
+    min-height: 100vh;
 }
 
 .header {
@@ -179,13 +180,18 @@ body {
 
 .footer{
     display: flex;
-    background-color: #1f2937;
-    color: #e5e7eb;
-    justify-content: center;
-    padding: 32px;
+    /* push footer paragraph to bottom of the page when screen height is large*/
+    flex: 1;
+    align-items: flex-end;
 }
 
 .footer p {
     margin: 0;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    flex: 1;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
 }
 
